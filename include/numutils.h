@@ -76,13 +76,6 @@ void bstd_assign_int64(bstd_number* number, int64_t value);
 void bstd_assign_double(bstd_number* number, double value);
 
 /**
- * todo: remove; bstd_number_to_cstr is sufficient
- * @param number
- * @param advancing
- */
-void bstd_print_number(bstd_number number, bool advancing);
-
-/**
  * Determines whether the specified {@link lhs} is strictly greater than the specified {@link rhs}.
  * @param lhs The left-hand side of the infix ">" operator.
  * @param rhs The right-hand side of the infix ">" operator.
@@ -113,7 +106,7 @@ bool bstd_number_equals(const bstd_number* lhs, const bstd_number* rhs);
  * @param number
  * @return
  */
-char* bstd_number_to_cstr(bstd_number number);
+char* bstd_number_to_cstr(bstd_number* number);
 
 #ifdef __cplusplus
 }
